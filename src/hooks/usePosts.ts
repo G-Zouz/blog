@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { getPosts } from '@/utils/post';
 import { Issues } from '@/types';
 
-const perPage = 10000;
+const perPage = 10;
 
 export default function usePosts(initPosts: Issues = []) {
   const [posts, setPosts] = useState<Issues>(initPosts);
